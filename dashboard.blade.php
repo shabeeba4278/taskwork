@@ -21,6 +21,15 @@
                   <th></th>
                 </tr>
               </thead>
+              <tbody>
+                @foreach ($lists as $item)
+                            <tr>
+                              <td>{{ $item->id }}</td>
+                              <td>{{ $item->title }}</td>
+                              <td>{{ $item->description }}</td>
+                            </tr>
+                            @endforeach
+                        </tbody>
             </table>
           </div>
         </div>
